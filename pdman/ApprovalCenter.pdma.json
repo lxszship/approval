@@ -4,7 +4,7 @@
   "avatar": "",
   "version": "4.9.4",
   "createdTime": "2024-9-29 22:10:48",
-  "updatedTime": "2024-9-29 22:10:48",
+  "updatedTime": "2024-9-30 00:35:51",
   "dbConns": [],
   "profile": {
     "default": {
@@ -636,806 +636,6 @@
   },
   "entities": [
     {
-      "id": "DF546A69-B112-4ECA-BD54-7B98AE88BE94",
-      "env": {
-        "base": {
-          "nameSpace": "",
-          "codeRoot": ""
-        }
-      },
-      "defKey": "application",
-      "defName": "应用",
-      "comment": "",
-      "properties": {
-        "partitioned by": "(date string)",
-        "row format delimited": "",
-        "fields terminated by ','": "",
-        "collection items terminated by '-'": "",
-        "map keys terminated by ':'": "",
-        "store as textfile;": ""
-      },
-      "sysProps": {
-        "nameTemplate": "{defKey}[{defName}]"
-      },
-      "notes": {},
-      "headers": [
-        {
-          "refKey": "hideInGraph",
-          "hideInGraph": true
-        },
-        {
-          "refKey": "defKey",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "defName",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "primaryKey",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "notNull",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "autoIncrement",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "domain",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "type",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "len",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "scale",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "comment",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "refDict",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "defaultValue",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "isStandard",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "uiHint",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "extProps",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr1",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr2",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr3",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr4",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr5",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr6",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr7",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr8",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr9",
-          "freeze": false,
-          "hideInGraph": true
-        }
-      ],
-      "fields": [
-        {
-          "defKey": "id",
-          "defName": "ID",
-          "comment": "",
-          "type": "BIGINT",
-          "len": "",
-          "scale": "",
-          "primaryKey": true,
-          "notNull": true,
-          "autoIncrement": true,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
-          "extProps": {},
-          "domain": "",
-          "id": "66842F48-C556-4B97-AA51-F02EE4533A1E",
-          "uiHint": "",
-          "isStandard": true,
-          "refStandard": "3B17D0B0-D051-47D6-A51D-6B04CA595444"
-        },
-        {
-          "defKey": "name",
-          "defName": "名称",
-          "comment": "",
-          "type": "",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "FC9790A7-36B8-4A48-8F9A-BC1042BCFE64",
-          "extProps": {},
-          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
-          "id": "30DE428F-075A-4A69-AB6E-D6D21A2C350E"
-        },
-        {
-          "defKey": "url",
-          "defName": "应用目标地址",
-          "comment": "",
-          "type": "VARCHAR",
-          "len": 2048,
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "FC9790A7-36B8-4A48-8F9A-BC1042BCFE64",
-          "extProps": {},
-          "domain": "",
-          "id": "66003C70-23D8-4932-9656-9A7966772C50"
-        },
-        {
-          "defKey": "logo",
-          "defName": "logo链接",
-          "comment": "",
-          "type": "VARCHAR",
-          "len": 2048,
-          "scale": "",
-          "primaryKey": false,
-          "notNull": false,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "FC9790A7-36B8-4A48-8F9A-BC1042BCFE64",
-          "extProps": {},
-          "domain": "",
-          "id": "C5F03048-4CFD-4047-A4BC-8CA57AF705F2"
-        },
-        {
-          "defKey": "catalogue_id",
-          "defName": "目录ID",
-          "comment": "",
-          "type": "BIGINT",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
-          "extProps": {},
-          "domain": "",
-          "id": "D7E045FF-4065-46E0-BB94-6ED544276DB6"
-        },
-        {
-          "defKey": "description",
-          "defName": "应用描述",
-          "comment": "",
-          "type": "VARCHAR",
-          "len": 4096,
-          "scale": "",
-          "primaryKey": false,
-          "notNull": false,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "FC9790A7-36B8-4A48-8F9A-BC1042BCFE64",
-          "extProps": {},
-          "domain": "",
-          "id": "2A64888A-702C-4AAF-AFC8-80344BB3F09E"
-        },
-        {
-          "defKey": "open_mode",
-          "defName": "打开模式",
-          "comment": "",
-          "type": "VARCHAR",
-          "len": 16,
-          "scale": "",
-          "primaryKey": false,
-          "notNull": false,
-          "autoIncrement": false,
-          "defaultValue": "'APP'",
-          "hideInGraph": false,
-          "refDict": "CB5D76ED-362D-45C3-9D94-5EA47ED5B5EC",
-          "baseType": "FC9790A7-36B8-4A48-8F9A-BC1042BCFE64",
-          "extProps": {},
-          "domain": "",
-          "id": "3435CFB6-3B42-47AD-8C2F-D082EECE1877"
-        },
-        {
-          "defKey": "duty_id",
-          "defName": "责任人",
-          "comment": "",
-          "type": "BIGINT",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": false,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
-          "extProps": {},
-          "domain": "",
-          "id": "C46FDE81-56AA-40AD-9C60-192EABAE7E95"
-        },
-        {
-          "defKey": "gmt_create",
-          "defName": "创建时间",
-          "comment": "",
-          "type": "DATETIME",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "CURRENT_TIMESTAMP",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "89D69E81-EA34-42EE-9FA2-93B8BD27E098",
-          "extProps": {},
-          "domain": "",
-          "id": "9A0A75B9-2405-4CE2-87A3-B194969403B2",
-          "uiHint": "",
-          "isStandard": true,
-          "refStandard": "201CF1AD-565C-473A-924C-DD70F2F78D69"
-        },
-        {
-          "defKey": "gmt_modified",
-          "defName": "修改时间",
-          "comment": "",
-          "type": "DATETIME",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "CURRENT_TIMESTAMP",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "89D69E81-EA34-42EE-9FA2-93B8BD27E098",
-          "extProps": {},
-          "domain": "",
-          "id": "D35EDBDA-2408-47D2-8C45-BCF8BCFB8D46",
-          "uiHint": "",
-          "isStandard": true,
-          "refStandard": "D885FC12-293E-4E58-B414-97262A3CDFAC"
-        },
-        {
-          "defKey": "create_user_id",
-          "defName": "创建人ID",
-          "comment": "",
-          "type": "BIGINT",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": false,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
-          "extProps": {},
-          "domain": "",
-          "id": "4FE8A947-F8CF-408F-B3E5-BFD0BA14058A",
-          "uiHint": "",
-          "isStandard": true,
-          "refStandard": "C95CC516-C681-4857-9362-7DF32B92C5D4"
-        },
-        {
-          "defKey": "modify_user_id",
-          "defName": "修改人ID",
-          "comment": "",
-          "type": "BIGINT",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": false,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
-          "extProps": {},
-          "domain": "",
-          "id": "B72818DA-CAD9-43F2-8B13-3BE65D2F07E5",
-          "uiHint": "",
-          "isStandard": true,
-          "refStandard": "E899B7E9-6F8D-4C88-9ECB-11AFA29E0C28"
-        },
-        {
-          "defKey": "version",
-          "defName": "版本号（乐观锁）",
-          "comment": "",
-          "type": "BIGINT",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "0",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
-          "extProps": {},
-          "domain": "",
-          "id": "1D2F954E-5805-44D1-957F-FD2BA0AE10D2"
-        },
-        {
-          "defKey": "deleted",
-          "defName": "是否删除",
-          "comment": "删除时写入id",
-          "type": "BIGINT",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "0",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
-          "extProps": {},
-          "domain": "",
-          "id": "DC3412AE-7A83-45D8-9A2B-873DA8EA46F7",
-          "uiHint": "",
-          "isStandard": true,
-          "refStandard": "60452292-DAEE-48F3-99B5-7FB2838EA3C7"
-        }
-      ],
-      "correlations": [],
-      "indexes": [
-        {
-          "defKey": "uniq_name",
-          "defName": null,
-          "unique": true,
-          "comment": "",
-          "fields": [
-            {
-              "fieldDefKey": "30DE428F-075A-4A69-AB6E-D6D21A2C350E",
-              "ascOrDesc": "A",
-              "id": "0D0DD6F1-0577-419D-8965-3BCA23C579D7"
-            },
-            {
-              "fieldDefKey": "DC3412AE-7A83-45D8-9A2B-873DA8EA46F7",
-              "ascOrDesc": "A",
-              "id": "0C14C190-9A9D-49FE-8A80-3610B9581C5C"
-            }
-          ],
-          "id": "C1297DE1-931A-41A9-8732-B4942BB937C5"
-        }
-      ],
-      "type": "P"
-    },
-    {
-      "id": "59667C52-52DC-48C0-99B7-A8500F23268B",
-      "env": {
-        "base": {
-          "nameSpace": "",
-          "codeRoot": ""
-        }
-      },
-      "defKey": "application_catalogue",
-      "defName": "应用目录",
-      "comment": "",
-      "properties": {
-        "partitioned by": "(date string)",
-        "row format delimited": "",
-        "fields terminated by ','": "",
-        "collection items terminated by '-'": "",
-        "map keys terminated by ':'": "",
-        "store as textfile;": ""
-      },
-      "sysProps": {
-        "nameTemplate": "{defKey}[{defName}]"
-      },
-      "notes": {},
-      "headers": [
-        {
-          "refKey": "hideInGraph",
-          "hideInGraph": true
-        },
-        {
-          "refKey": "defKey",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "defName",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "primaryKey",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "notNull",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "autoIncrement",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "domain",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "type",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "len",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "scale",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "comment",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "refDict",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "defaultValue",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "isStandard",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "uiHint",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "extProps",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr1",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr2",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr3",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr4",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr5",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr6",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr7",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr8",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr9",
-          "freeze": false,
-          "hideInGraph": true
-        }
-      ],
-      "fields": [
-        {
-          "defKey": "id",
-          "defName": "ID",
-          "comment": "",
-          "type": "BIGINT",
-          "len": "",
-          "scale": "",
-          "primaryKey": true,
-          "notNull": true,
-          "autoIncrement": true,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
-          "extProps": {},
-          "domain": "",
-          "id": "43C5BCFE-4476-499E-B605-905AD941AFE6",
-          "uiHint": "",
-          "isStandard": true,
-          "refStandard": "3B17D0B0-D051-47D6-A51D-6B04CA595444"
-        },
-        {
-          "defKey": "name",
-          "defName": "目录名称",
-          "comment": "",
-          "type": "",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "FC9790A7-36B8-4A48-8F9A-BC1042BCFE64",
-          "extProps": {},
-          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
-          "id": "077D5CF3-0636-4575-AA45-049D2D157385"
-        },
-        {
-          "defKey": "parent_id",
-          "defName": "父ID",
-          "comment": "",
-          "type": "BIGINT",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": false,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
-          "extProps": {},
-          "domain": "",
-          "id": "3E8E94EA-00E1-410C-8AAC-5C877FD63AC0"
-        },
-        {
-          "defKey": "path",
-          "defName": "路径",
-          "comment": "",
-          "type": "VARCHAR",
-          "len": 121,
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "'[]'",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "FC9790A7-36B8-4A48-8F9A-BC1042BCFE64",
-          "extProps": {},
-          "domain": "",
-          "id": "8D4B053A-1809-456D-BEFC-19D5E8A5AB9B"
-        },
-        {
-          "defKey": "gmt_create",
-          "defName": "创建时间",
-          "comment": "",
-          "type": "DATETIME",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "CURRENT_TIMESTAMP",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "89D69E81-EA34-42EE-9FA2-93B8BD27E098",
-          "extProps": {},
-          "domain": "",
-          "id": "845B2648-0A15-4B88-AEBF-FB4B2B391F8E",
-          "uiHint": "",
-          "isStandard": true,
-          "refStandard": "201CF1AD-565C-473A-924C-DD70F2F78D69"
-        },
-        {
-          "defKey": "gmt_modified",
-          "defName": "修改时间",
-          "comment": "",
-          "type": "DATETIME",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "CURRENT_TIMESTAMP",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "89D69E81-EA34-42EE-9FA2-93B8BD27E098",
-          "extProps": {},
-          "domain": "",
-          "id": "F1967EFC-5C5E-41EE-866F-AA35979AA864",
-          "uiHint": "",
-          "isStandard": true,
-          "refStandard": "D885FC12-293E-4E58-B414-97262A3CDFAC"
-        },
-        {
-          "defKey": "create_user_id",
-          "defName": "创建人ID",
-          "comment": "",
-          "type": "BIGINT",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": false,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
-          "extProps": {},
-          "domain": "",
-          "id": "5D748879-7DED-47B7-A0F3-218857FEAB8B",
-          "uiHint": "",
-          "isStandard": true,
-          "refStandard": "C95CC516-C681-4857-9362-7DF32B92C5D4"
-        },
-        {
-          "defKey": "modify_user_id",
-          "defName": "修改人ID",
-          "comment": "",
-          "type": "BIGINT",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": false,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
-          "extProps": {},
-          "domain": "",
-          "id": "09A1B273-B3CE-4402-88B0-A2AEFAE9C585",
-          "uiHint": "",
-          "isStandard": true,
-          "refStandard": "E899B7E9-6F8D-4C88-9ECB-11AFA29E0C28"
-        },
-        {
-          "defKey": "deleted",
-          "defName": "是否删除",
-          "comment": "删除时写入id",
-          "type": "BIGINT",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "0",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
-          "extProps": {},
-          "domain": "",
-          "id": "70256766-A8E1-49B1-A9F5-4BC3250B7A46",
-          "uiHint": "",
-          "isStandard": true,
-          "refStandard": "60452292-DAEE-48F3-99B5-7FB2838EA3C7"
-        }
-      ],
-      "correlations": [],
-      "indexes": [
-        {
-          "defKey": "uniq_name",
-          "defName": null,
-          "unique": true,
-          "comment": "",
-          "fields": [
-            {
-              "fieldDefKey": "077D5CF3-0636-4575-AA45-049D2D157385",
-              "ascOrDesc": "A",
-              "id": "56853E01-44C4-474F-A3DE-BCEF91EB74FC"
-            },
-            {
-              "fieldDefKey": "70256766-A8E1-49B1-A9F5-4BC3250B7A46",
-              "ascOrDesc": "A",
-              "id": "290EADE6-4CC8-4DFF-800A-0B9E65F8D12D"
-            }
-          ],
-          "id": "27E3F2ED-2A6D-4A78-BCFF-8D8FB2262264"
-        }
-      ],
-      "type": "P"
-    },
-    {
       "id": "7CEBA58C-CA96-43C6-AF2E-5C8C37D4F089",
       "env": {
         "base": {
@@ -1625,24 +825,6 @@
           "id": "DD924524-1E90-44D8-91C7-AA3180F08FB3"
         },
         {
-          "defKey": "enabled",
-          "defName": "是否启用",
-          "comment": "",
-          "type": "BIGINT",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": false,
-          "autoIncrement": false,
-          "defaultValue": "1",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
-          "extProps": {},
-          "domain": "",
-          "id": "51F495B1-A391-4E7A-9167-A14FA657C2DD"
-        },
-        {
           "defKey": "gmt_create",
           "defName": "创建时间",
           "comment": "",
@@ -1798,8 +980,8 @@
           "codeRoot": ""
         }
       },
-      "defKey": "application_approval_flow",
-      "defName": "应用审批流",
+      "defKey": "approval_flow_selector",
+      "defName": "审批流选择器",
       "comment": "",
       "properties": {
         "partitioned by": "(date string)",
@@ -1963,46 +1145,10 @@
         },
         {
           "defKey": "action",
-          "defName": "",
+          "defName": "审批动作类型",
           "comment": "",
-          "type": "",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": false,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "FC9790A7-36B8-4A48-8F9A-BC1042BCFE64",
-          "extProps": {},
-          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
-          "id": "61AA95A9-F3AA-4D3D-9C60-3F652F4FDD27"
-        },
-        {
-          "defKey": "description",
-          "defName": "",
-          "comment": "",
-          "type": "",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": false,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "FC9790A7-36B8-4A48-8F9A-BC1042BCFE64",
-          "extProps": {},
-          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
-          "id": "768D03B2-FB7E-4FAC-8C5F-A0D4290D5520"
-        },
-        {
-          "defKey": "application_id",
-          "defName": "应用ID",
-          "comment": "存储后不允许修改",
-          "type": "BIGINT",
-          "len": "",
+          "type": "VARCHAR",
+          "len": 32,
           "scale": "",
           "primaryKey": false,
           "notNull": true,
@@ -2010,10 +1156,46 @@
           "defaultValue": "",
           "hideInGraph": false,
           "refDict": "",
-          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
+          "baseType": "FC9790A7-36B8-4A48-8F9A-BC1042BCFE64",
           "extProps": {},
           "domain": "",
-          "id": "BEF71CFC-79F4-4E6A-BCA6-30F3813069B2"
+          "id": "61AA95A9-F3AA-4D3D-9C60-3F652F4FDD27"
+        },
+        {
+          "defKey": "selector",
+          "defName": "审批流选择器",
+          "comment": "",
+          "type": "VARCHAR",
+          "len": 4096,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "baseType": "FC9790A7-36B8-4A48-8F9A-BC1042BCFE64",
+          "extProps": {},
+          "domain": "",
+          "id": "A1E10752-FE60-4DE6-9EF0-F091AC25F221"
+        },
+        {
+          "defKey": "description",
+          "defName": "审批动作细节描述",
+          "comment": "",
+          "type": "VARCHAR",
+          "len": 255,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "baseType": "FC9790A7-36B8-4A48-8F9A-BC1042BCFE64",
+          "extProps": {},
+          "domain": "",
+          "id": "768D03B2-FB7E-4FAC-8C5F-A0D4290D5520"
         },
         {
           "defKey": "approval_flow_id",
@@ -2566,127 +1748,83 @@
       "notes": {},
       "headers": [
         {
+          "freeze": false,
           "refKey": "hideInGraph",
           "hideInGraph": true
         },
         {
+          "freeze": true,
           "refKey": "defKey",
-          "freeze": false,
           "hideInGraph": false
         },
         {
+          "freeze": true,
           "refKey": "defName",
-          "freeze": false,
           "hideInGraph": false
         },
         {
+          "freeze": false,
           "refKey": "primaryKey",
-          "freeze": false,
           "hideInGraph": false
         },
         {
+          "freeze": false,
           "refKey": "notNull",
-          "freeze": false,
           "hideInGraph": true
         },
         {
+          "freeze": false,
           "refKey": "autoIncrement",
-          "freeze": false,
           "hideInGraph": true
         },
         {
+          "freeze": false,
           "refKey": "domain",
-          "freeze": false,
           "hideInGraph": true
         },
         {
+          "freeze": false,
           "refKey": "type",
-          "freeze": false,
           "hideInGraph": false
         },
         {
+          "freeze": false,
           "refKey": "len",
-          "freeze": false,
           "hideInGraph": false
         },
         {
+          "freeze": false,
           "refKey": "scale",
-          "freeze": false,
           "hideInGraph": false
         },
         {
+          "freeze": false,
           "refKey": "comment",
-          "freeze": false,
           "hideInGraph": true
         },
         {
+          "freeze": false,
           "refKey": "refDict",
-          "freeze": false,
           "hideInGraph": true
         },
         {
+          "freeze": false,
           "refKey": "defaultValue",
-          "freeze": false,
           "hideInGraph": true
         },
         {
-          "refKey": "isStandard",
           "freeze": false,
+          "refKey": "isStandard",
           "hideInGraph": false
         },
         {
+          "freeze": false,
           "refKey": "uiHint",
-          "freeze": false,
           "hideInGraph": true
         },
         {
+          "freeze": false,
           "refKey": "extProps",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr1",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr2",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr3",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr4",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr5",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr6",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr7",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr8",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr9",
-          "freeze": false,
           "hideInGraph": true
         }
       ],
@@ -2720,7 +1858,7 @@
           "len": "",
           "scale": "",
           "primaryKey": false,
-          "notNull": true,
+          "notNull": false,
           "autoIncrement": false,
           "defaultValue": "",
           "hideInGraph": false,
@@ -2728,51 +1866,32 @@
           "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
           "extProps": {},
           "domain": "",
-          "id": "5F8B497B-C952-48C6-A206-57C5789CC7A7"
+          "id": "809C03C9-07C8-4443-A58D-783394EA447D"
         },
         {
-          "defKey": "application_id",
-          "defName": "待申请应用",
+          "defKey": "action",
+          "defName": "动作类型",
           "comment": "",
-          "type": "BIGINT",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
-          "extProps": {},
-          "domain": "",
-          "id": "B71D4F30-FD8D-4555-800E-773EC0EEA5B4"
-        },
-        {
-          "defKey": "begin",
-          "defName": "应用访问开始时间",
-          "comment": "begin，end为默认值表示申请永久权限",
-          "type": "DATETIME",
-          "len": "",
+          "type": "VARCHAR",
+          "len": 32,
           "scale": "",
           "primaryKey": false,
           "notNull": false,
           "autoIncrement": false,
-          "defaultValue": "'1000-01-01 00:00:00'",
+          "defaultValue": "",
           "hideInGraph": false,
           "refDict": "",
-          "baseType": "89D69E81-EA34-42EE-9FA2-93B8BD27E098",
+          "baseType": "FC9790A7-36B8-4A48-8F9A-BC1042BCFE64",
           "extProps": {},
           "domain": "",
-          "id": "36675EFB-9FA5-49DE-8511-036801834AD6",
-          "attr1": ""
+          "id": "AE151556-60FF-4BF1-9D4E-0B1E9CBFFD00"
         },
         {
-          "defKey": "end",
-          "defName": "应用访问结束时间",
+          "defKey": "attributes",
+          "defName": "动作属性",
           "comment": "",
-          "type": "DATETIME",
-          "len": "",
+          "type": "VARCHAR",
+          "len": 4096,
           "scale": "",
           "primaryKey": false,
           "notNull": false,
@@ -2780,7 +1899,7 @@
           "defaultValue": "'9999-12-31 23:59:59'",
           "hideInGraph": false,
           "refDict": "",
-          "baseType": "89D69E81-EA34-42EE-9FA2-93B8BD27E098",
+          "baseType": "FC9790A7-36B8-4A48-8F9A-BC1042BCFE64",
           "extProps": {},
           "domain": "",
           "id": "3870E516-D85C-463E-BC46-C14D6EE45671",
@@ -2842,8 +1961,8 @@
           "id": "38E26B16-1221-4810-B661-9CF2016E2BC7"
         },
         {
-          "defKey": "application_approval_flow_id",
-          "defName": "应用审批流ID",
+          "defKey": "approval_flow_selector_id",
+          "defName": "审批流选择器ID",
           "comment": "",
           "type": "BIGINT",
           "len": "",
@@ -3382,628 +2501,6 @@
         }
       ],
       "type": "P"
-    },
-    {
-      "id": "5C700788-3D37-4115-89E4-7CDB45667837",
-      "env": {
-        "base": {
-          "nameSpace": "",
-          "codeRoot": ""
-        }
-      },
-      "defKey": "user_application_authorization",
-      "defName": "用户应用授权表",
-      "comment": "",
-      "properties": {
-        "partitioned by": "(date string)",
-        "row format delimited": "",
-        "fields terminated by ','": "",
-        "collection items terminated by '-'": "",
-        "map keys terminated by ':'": "",
-        "store as textfile;": ""
-      },
-      "sysProps": {
-        "nameTemplate": "{defKey}[{defName}]"
-      },
-      "notes": {},
-      "headers": [
-        {
-          "refKey": "hideInGraph",
-          "hideInGraph": true
-        },
-        {
-          "refKey": "defKey",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "defName",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "primaryKey",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "notNull",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "autoIncrement",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "domain",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "type",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "len",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "scale",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "comment",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "refDict",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "defaultValue",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "isStandard",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "uiHint",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "extProps",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr1",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr2",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr3",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr4",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr5",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr6",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr7",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr8",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr9",
-          "freeze": false,
-          "hideInGraph": true
-        }
-      ],
-      "fields": [
-        {
-          "defKey": "id",
-          "defName": "ID",
-          "comment": "",
-          "type": "BIGINT",
-          "len": "",
-          "scale": "",
-          "primaryKey": true,
-          "notNull": true,
-          "autoIncrement": true,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
-          "extProps": {},
-          "domain": "",
-          "id": "14B2A33D-B38C-4B52-8531-7D53A912E390",
-          "uiHint": "",
-          "isStandard": true,
-          "refStandard": "3B17D0B0-D051-47D6-A51D-6B04CA595444"
-        },
-        {
-          "defKey": "user_id",
-          "defName": "用户ID",
-          "comment": "",
-          "type": "BIGINT",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
-          "extProps": {},
-          "domain": "",
-          "id": "9B97EA0D-2682-4E24-897E-7C01E1D0D35F"
-        },
-        {
-          "defKey": "application_id",
-          "defName": "应用ID",
-          "comment": "",
-          "type": "BIGINT",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
-          "extProps": {},
-          "domain": "",
-          "id": "798D8A55-FFF7-4468-9560-7DBDCC71AE22"
-        },
-        {
-          "defKey": "begin",
-          "defName": "授权有效期开始时间",
-          "comment": "begin，end为默认值表示申请永久权限",
-          "type": "DATETIME",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "'1000-01-01 00:00:00'",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "89D69E81-EA34-42EE-9FA2-93B8BD27E098",
-          "extProps": {},
-          "domain": "",
-          "id": "D5BFD378-56E5-49C4-AA6B-0C737CD20FC1"
-        },
-        {
-          "defKey": "end",
-          "defName": "授权有效期结束时间",
-          "comment": "",
-          "type": "DATETIME",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "'9999-12-31 23:59:59'",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "89D69E81-EA34-42EE-9FA2-93B8BD27E098",
-          "extProps": {},
-          "domain": "",
-          "id": "1CBD6936-5C92-4FB7-8812-4E75086B4157"
-        },
-        {
-          "defKey": "status",
-          "defName": "授权状态",
-          "comment": "已授权，已撤回，已过期（有效期已过）",
-          "type": "VARCHAR",
-          "len": 16,
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "FC9790A7-36B8-4A48-8F9A-BC1042BCFE64",
-          "extProps": {},
-          "domain": "",
-          "id": "B37A6986-7892-4F17-9667-C771DF951F71"
-        },
-        {
-          "defKey": "requisition_form_id",
-          "defName": "申请单ID",
-          "comment": "",
-          "type": "BIGINT",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": false,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
-          "extProps": {},
-          "domain": "",
-          "id": "9783EF8D-49FA-49B1-960C-14156CC21482"
-        },
-        {
-          "defKey": "gmt_create",
-          "defName": "创建时间",
-          "comment": "",
-          "type": "DATETIME",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "CURRENT_TIMESTAMP",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "89D69E81-EA34-42EE-9FA2-93B8BD27E098",
-          "extProps": {},
-          "domain": "",
-          "id": "F9ED4C65-4CC8-4167-A3E4-7B12FB65981D",
-          "uiHint": "",
-          "isStandard": true,
-          "refStandard": "201CF1AD-565C-473A-924C-DD70F2F78D69"
-        },
-        {
-          "defKey": "gmt_modified",
-          "defName": "修改时间",
-          "comment": "",
-          "type": "DATETIME",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "CURRENT_TIMESTAMP",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "89D69E81-EA34-42EE-9FA2-93B8BD27E098",
-          "extProps": {},
-          "domain": "",
-          "id": "86C98BA2-1D62-4D3C-87C0-241EEFADCAA6",
-          "uiHint": "",
-          "isStandard": true,
-          "refStandard": "D885FC12-293E-4E58-B414-97262A3CDFAC"
-        },
-        {
-          "defKey": "create_user_id",
-          "defName": "创建人ID",
-          "comment": "",
-          "type": "BIGINT",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": false,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
-          "extProps": {},
-          "domain": "",
-          "id": "A7B9912F-F4CF-46BA-ACFA-DFC9E1A4413C",
-          "uiHint": "",
-          "isStandard": true,
-          "refStandard": "C95CC516-C681-4857-9362-7DF32B92C5D4"
-        },
-        {
-          "defKey": "modify_user_id",
-          "defName": "修改人ID",
-          "comment": "",
-          "type": "BIGINT",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": false,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
-          "extProps": {},
-          "domain": "",
-          "id": "24A049DE-FAAD-45E9-BF3A-29898A574C33",
-          "uiHint": "",
-          "isStandard": true,
-          "refStandard": "E899B7E9-6F8D-4C88-9ECB-11AFA29E0C28"
-        },
-        {
-          "defKey": "deleted",
-          "defName": "是否删除",
-          "comment": "删除时写入id",
-          "type": "BIGINT",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "0",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
-          "extProps": {},
-          "domain": "",
-          "id": "49D36C18-E719-440D-882B-E168948D6BA6",
-          "uiHint": "",
-          "isStandard": true,
-          "refStandard": "60452292-DAEE-48F3-99B5-7FB2838EA3C7"
-        }
-      ],
-      "correlations": [],
-      "indexes": [],
-      "type": "P"
-    },
-    {
-      "id": "EA9C510F-20AD-43E5-A9D2-61ED87717D7B",
-      "env": {
-        "base": {
-          "nameSpace": "",
-          "codeRoot": ""
-        }
-      },
-      "defKey": "user_application_on_top",
-      "defName": "置顶应用",
-      "comment": "",
-      "properties": {
-        "partitioned by": "(date string)",
-        "row format delimited": "",
-        "fields terminated by ','": "",
-        "collection items terminated by '-'": "",
-        "map keys terminated by ':'": "",
-        "store as textfile;": ""
-      },
-      "sysProps": {
-        "nameTemplate": "{defKey}[{defName}]"
-      },
-      "notes": {},
-      "headers": [
-        {
-          "refKey": "hideInGraph",
-          "hideInGraph": true
-        },
-        {
-          "refKey": "defKey",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "defName",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "primaryKey",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "notNull",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "autoIncrement",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "domain",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "type",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "len",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "scale",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "comment",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "refDict",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "defaultValue",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "isStandard",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "uiHint",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "extProps",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr1",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr2",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr3",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr4",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr5",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr6",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr7",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr8",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr9",
-          "freeze": false,
-          "hideInGraph": true
-        }
-      ],
-      "fields": [
-        {
-          "defKey": "id",
-          "defName": "ID",
-          "comment": "",
-          "type": "BIGINT",
-          "len": "",
-          "scale": "",
-          "primaryKey": true,
-          "notNull": true,
-          "autoIncrement": true,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
-          "extProps": {},
-          "domain": "",
-          "id": "98FA7013-7C0A-44DF-A834-E207A8F6811E",
-          "uiHint": "",
-          "isStandard": true,
-          "refStandard": "3B17D0B0-D051-47D6-A51D-6B04CA595444"
-        },
-        {
-          "defKey": "user_id",
-          "defName": "",
-          "comment": "",
-          "type": "BIGINT",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
-          "extProps": {},
-          "domain": "",
-          "id": "1713547B-789E-4FCB-AE54-5F7F54B765A5"
-        },
-        {
-          "defKey": "application_id",
-          "defName": "",
-          "comment": "",
-          "type": "BIGINT",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
-          "extProps": {},
-          "domain": "",
-          "id": "451AFBB9-0814-41C7-B0E1-C4277E34E375"
-        },
-        {
-          "defKey": "gmt_create",
-          "defName": "创建时间",
-          "comment": "",
-          "type": "DATETIME",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "CURRENT_TIMESTAMP",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "89D69E81-EA34-42EE-9FA2-93B8BD27E098",
-          "extProps": {},
-          "domain": "",
-          "id": "35544203-C940-4AE0-881F-14DB89A5DF19",
-          "uiHint": "",
-          "isStandard": true,
-          "refStandard": "201CF1AD-565C-473A-924C-DD70F2F78D69"
-        }
-      ],
-      "correlations": [],
-      "indexes": [],
-      "type": "P"
     }
   ],
   "views": [],
@@ -4044,18 +2541,14 @@
   ],
   "viewGroups": [
     {
-      "defKey": "application",
-      "defName": "应用",
+      "defKey": "approval",
+      "defName": "审批",
       "refEntities": [
-        "DF546A69-B112-4ECA-BD54-7B98AE88BE94",
-        "59667C52-52DC-48C0-99B7-A8500F23268B",
         "B7423751-6977-4396-B3A1-7DA18B411922",
         "7CEBA58C-CA96-43C6-AF2E-5C8C37D4F089",
-        "9D3E359D-F5F7-459F-A86C-70EF09895757",
         "DB2B6B74-3E5F-4713-AEC5-09DBADBF8465",
-        "73043F45-6F06-4D68-902A-8F35364D16B3",
-        "5C700788-3D37-4115-89E4-7CDB45667837",
-        "EA9C510F-20AD-43E5-A9D2-61ED87717D7B"
+        "9D3E359D-F5F7-459F-A86C-70EF09895757",
+        "73043F45-6F06-4D68-902A-8F35364D16B3"
       ],
       "refViews": [],
       "refDiagrams": [],

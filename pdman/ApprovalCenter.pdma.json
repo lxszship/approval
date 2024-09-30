@@ -4,7 +4,7 @@
   "avatar": "",
   "version": "4.9.4",
   "createdTime": "2024-9-29 22:10:48",
-  "updatedTime": "2024-9-30 00:39:55",
+  "updatedTime": "2024-9-30 08:57:48",
   "dbConns": [],
   "profile": {
     "default": {
@@ -803,7 +803,7 @@
           "defKey": "version",
           "defName": "版本号",
           "comment": "",
-          "type": "INT",
+          "type": "BIGINT",
           "len": "",
           "scale": "",
           "primaryKey": false,
@@ -812,7 +812,7 @@
           "defaultValue": "",
           "hideInGraph": false,
           "refDict": "",
-          "baseType": "1D764C4A-6F9F-421E-B11A-6F3E23B51811",
+          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
           "extProps": {},
           "domain": "",
           "id": "48CC9D08-338D-453E-BCC9-070E76B44527"
@@ -1105,6 +1105,24 @@
           "extProps": {},
           "domain": "",
           "id": "A27B299E-98C8-4B5D-A2E4-609475AEDF91"
+        },
+        {
+          "defKey": "status",
+          "defName": "审批流选择器状态",
+          "comment": "ENABLED：已启用；DISABLED：已停用；INVALIDITY：已失效",
+          "type": "VARCHAR",
+          "len": 16,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "baseType": "FC9790A7-36B8-4A48-8F9A-BC1042BCFE64",
+          "extProps": {},
+          "domain": "",
+          "id": "267DA82D-D2AD-4B89-8329-C11DFC4EC990"
         },
         {
           "defKey": "gmt_create",
@@ -1834,7 +1852,7 @@
           "id": "29953E76-0E8C-485B-A3DA-51A993A56BF6"
         },
         {
-          "defKey": "invalid_cause",
+          "defKey": "cause_of_invalidity",
           "defName": "失效原因",
           "comment": "",
           "type": "",
@@ -1891,7 +1909,7 @@
           "defKey": "approval_flow_version",
           "defName": "审批流版本号",
           "comment": "",
-          "type": "INT",
+          "type": "BIGINT",
           "len": "",
           "scale": "",
           "primaryKey": false,
@@ -1900,7 +1918,7 @@
           "defaultValue": "",
           "hideInGraph": false,
           "refDict": "",
-          "baseType": "1D764C4A-6F9F-421E-B11A-6F3E23B51811",
+          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
           "extProps": {},
           "domain": "",
           "id": "8825CDF1-4AEA-4682-93BE-F29AB5203A8E"
@@ -2437,8 +2455,8 @@
       "refEntities": [
         "B7423751-6977-4396-B3A1-7DA18B411922",
         "7CEBA58C-CA96-43C6-AF2E-5C8C37D4F089",
-        "DB2B6B74-3E5F-4713-AEC5-09DBADBF8465",
         "9D3E359D-F5F7-459F-A86C-70EF09895757",
+        "DB2B6B74-3E5F-4713-AEC5-09DBADBF8465",
         "73043F45-6F06-4D68-902A-8F35364D16B3"
       ],
       "refViews": [],

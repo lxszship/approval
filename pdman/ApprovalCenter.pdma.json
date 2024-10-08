@@ -4,7 +4,7 @@
   "avatar": "",
   "version": "4.9.4",
   "createdTime": "2024-9-29 22:10:48",
-  "updatedTime": "2024-10-8 21:46:08",
+  "updatedTime": "2024-10-9 00:58:26",
   "dbConns": [],
   "profile": {
     "default": {
@@ -1498,6 +1498,24 @@
           "id": "E98E59BE-D491-4339-96B4-259D2C39D3FD"
         },
         {
+          "defKey": "node_type",
+          "defName": "审批类型",
+          "comment": "LEAST_ONE_SIGN：或签，ALL_SIGN：会签",
+          "type": "VARCHAR",
+          "len": 16,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "baseType": "FC9790A7-36B8-4A48-8F9A-BC1042BCFE64",
+          "extProps": {},
+          "domain": "",
+          "id": "7F04E7CC-DCAA-4078-B0D0-2A51B241B266"
+        },
+        {
           "defKey": "requisition_form_id",
           "defName": "申请单ID",
           "comment": "",
@@ -1514,24 +1532,6 @@
           "extProps": {},
           "domain": "",
           "id": "D8FD03AF-0565-4BFE-A1CC-23AEE38D07CD"
-        },
-        {
-          "defKey": "approval_flow_node_id",
-          "defName": "审批流节点ID",
-          "comment": "",
-          "type": "BIGINT",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
-          "extProps": {},
-          "domain": "",
-          "id": "E0B77171-1CF7-48BB-9685-945D3312D5E3"
         },
         {
           "defKey": "gmt_create",
@@ -1814,6 +1814,24 @@
           "id": "809C03C9-07C8-4443-A58D-783394EA447D"
         },
         {
+          "defKey": "user_version",
+          "defName": "申请人版本号",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "baseType": "FC9790A7-36B8-4A48-8F9A-BC1042BCFE64",
+          "extProps": {},
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "id": "0A851A2F-84CD-48E6-A47A-98806D7D6C64"
+        },
+        {
           "defKey": "action",
           "defName": "动作类型",
           "comment": "",
@@ -1908,7 +1926,7 @@
         {
           "defKey": "approval_flow_id",
           "defName": "审批流ID",
-          "comment": "NULL表示默认审批流程",
+          "comment": "NULL表示默认审批流程，此时approval_flow_version无效",
           "type": "BIGINT",
           "len": "",
           "scale": "",
@@ -2279,7 +2297,7 @@
         {
           "defKey": "node_type",
           "defName": "节点类型",
-          "comment": "或签，会签",
+          "comment": "LEAST_ONE_SIGN：或签，ALL_SIGN：会签",
           "type": "VARCHAR",
           "len": 16,
           "scale": "",

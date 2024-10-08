@@ -4,7 +4,7 @@
   "avatar": "",
   "version": "4.9.4",
   "createdTime": "2024-9-29 22:10:48",
-  "updatedTime": "2024-9-30 08:57:48",
+  "updatedTime": "2024-10-8 21:46:08",
   "dbConns": [],
   "profile": {
     "default": {
@@ -527,7 +527,326 @@
   },
   "entities": [
     {
-      "id": "7CEBA58C-CA96-43C6-AF2E-5C8C37D4F089",
+      "id": "F41A1BD5-D5CF-46DD-A183-FED76C0460B2",
+      "env": {
+        "base": {
+          "nameSpace": "",
+          "codeRoot": ""
+        }
+      },
+      "defKey": "approval_flow_template",
+      "defName": "审批流模板",
+      "comment": "",
+      "properties": {
+        "partitioned by": "(date string)",
+        "row format delimited": "",
+        "fields terminated by ','": "",
+        "collection items terminated by '-'": "",
+        "map keys terminated by ':'": "",
+        "store as textfile;": ""
+      },
+      "sysProps": {
+        "nameTemplate": "{defKey}[{defName}]"
+      },
+      "notes": {},
+      "headers": [
+        {
+          "refKey": "hideInGraph",
+          "hideInGraph": true
+        },
+        {
+          "refKey": "defKey",
+          "freeze": false,
+          "hideInGraph": false
+        },
+        {
+          "refKey": "defName",
+          "freeze": false,
+          "hideInGraph": false
+        },
+        {
+          "refKey": "primaryKey",
+          "freeze": false,
+          "hideInGraph": false
+        },
+        {
+          "refKey": "notNull",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "autoIncrement",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "domain",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "type",
+          "freeze": false,
+          "hideInGraph": false
+        },
+        {
+          "refKey": "len",
+          "freeze": false,
+          "hideInGraph": false
+        },
+        {
+          "refKey": "scale",
+          "freeze": false,
+          "hideInGraph": false
+        },
+        {
+          "refKey": "comment",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "refDict",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "defaultValue",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "isStandard",
+          "freeze": false,
+          "hideInGraph": false
+        },
+        {
+          "refKey": "uiHint",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "extProps",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "attr1",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "attr2",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "attr3",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "attr4",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "attr5",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "attr6",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "attr7",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "attr8",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "attr9",
+          "freeze": false,
+          "hideInGraph": true
+        }
+      ],
+      "fields": [
+        {
+          "defKey": "id",
+          "defName": "ID",
+          "comment": "",
+          "type": "BIGINT",
+          "len": "",
+          "scale": "",
+          "primaryKey": true,
+          "notNull": true,
+          "autoIncrement": true,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": null,
+          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
+          "extProps": {},
+          "domain": null,
+          "id": "71D7BE73-C0B6-4F80-823B-3CF5C487FC74",
+          "uiHint": null,
+          "isStandard": true,
+          "refStandard": "3B17D0B0-D051-47D6-A51D-6B04CA595444"
+        },
+        {
+          "defKey": "name",
+          "defName": "审批流模板名称",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": null,
+          "baseType": "FC9790A7-36B8-4A48-8F9A-BC1042BCFE64",
+          "extProps": {},
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "id": "550F64B8-50FF-47BF-ABE9-F13CE84FE2C5",
+          "uiHint": null
+        },
+        {
+          "defKey": "status",
+          "defName": "审批流模板状态",
+          "comment": "ENABLED：已启用；DISABLED：已停用",
+          "type": "VARCHAR",
+          "len": 16,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": null,
+          "baseType": "FC9790A7-36B8-4A48-8F9A-BC1042BCFE64",
+          "extProps": {},
+          "domain": null,
+          "id": "CF4F3621-BB81-4D1B-A4BD-4A78BCF7D8EF",
+          "uiHint": null
+        },
+        {
+          "defKey": "gmt_create",
+          "defName": "创建时间",
+          "comment": "",
+          "type": "DATETIME",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "CURRENT_TIMESTAMP",
+          "hideInGraph": false,
+          "refDict": null,
+          "baseType": "89D69E81-EA34-42EE-9FA2-93B8BD27E098",
+          "extProps": {},
+          "domain": null,
+          "id": "A4876895-D4F2-4B1E-A9E7-A533E0FB54DB",
+          "uiHint": null,
+          "isStandard": true,
+          "refStandard": "201CF1AD-565C-473A-924C-DD70F2F78D69"
+        },
+        {
+          "defKey": "gmt_modified",
+          "defName": "修改时间",
+          "comment": "",
+          "type": "DATETIME",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "CURRENT_TIMESTAMP",
+          "hideInGraph": false,
+          "refDict": null,
+          "baseType": "89D69E81-EA34-42EE-9FA2-93B8BD27E098",
+          "extProps": {},
+          "domain": null,
+          "id": "58C8AD8C-A179-4B96-990F-933309A31AA5",
+          "uiHint": null,
+          "isStandard": true,
+          "refStandard": "D885FC12-293E-4E58-B414-97262A3CDFAC"
+        },
+        {
+          "defKey": "create_user_id",
+          "defName": "创建人ID",
+          "comment": "",
+          "type": "BIGINT",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": null,
+          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
+          "extProps": {},
+          "domain": null,
+          "id": "453980CD-911F-4AC9-978D-822D71AC789A",
+          "uiHint": null,
+          "isStandard": true,
+          "refStandard": "C95CC516-C681-4857-9362-7DF32B92C5D4"
+        },
+        {
+          "defKey": "modify_user_id",
+          "defName": "修改人ID",
+          "comment": "",
+          "type": "BIGINT",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": null,
+          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
+          "extProps": {},
+          "domain": null,
+          "id": "273BB43D-6A36-49AB-AE87-E30C6644FD57",
+          "uiHint": null,
+          "isStandard": true,
+          "refStandard": "E899B7E9-6F8D-4C88-9ECB-11AFA29E0C28"
+        },
+        {
+          "defKey": "deleted",
+          "defName": "是否删除",
+          "comment": "删除时写入id",
+          "type": "BIGINT",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": false,
+          "refDict": null,
+          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
+          "extProps": {},
+          "domain": null,
+          "id": "9654EB33-F552-4062-947D-2C33705FEF57",
+          "uiHint": null,
+          "isStandard": true,
+          "refStandard": "60452292-DAEE-48F3-99B5-7FB2838EA3C7"
+        }
+      ],
+      "correlations": [],
+      "indexes": [],
+      "type": "P"
+    },
+    {
+      "id": "9D3E359D-F5F7-459F-A86C-70EF09895757",
       "env": {
         "base": {
           "nameSpace": "",
@@ -692,17 +1011,17 @@
           "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
           "extProps": {},
           "domain": "",
-          "id": "2612C8FE-711B-4B90-852C-E33E9E4987C1",
+          "id": "BC0B6AD7-DE8F-4FD3-A2FE-D480A0F8AC12",
           "uiHint": "",
           "isStandard": true,
           "refStandard": "3B17D0B0-D051-47D6-A51D-6B04CA595444"
         },
         {
           "defKey": "name",
-          "defName": "名称",
-          "comment": "",
-          "type": "",
-          "len": "",
+          "defName": "审批流名称",
+          "comment": "由action，selector确定",
+          "type": "VARCHAR",
+          "len": 4096,
           "scale": "",
           "primaryKey": false,
           "notNull": true,
@@ -712,332 +1031,13 @@
           "refDict": "",
           "baseType": "FC9790A7-36B8-4A48-8F9A-BC1042BCFE64",
           "extProps": {},
-          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
-          "id": "DD924524-1E90-44D8-91C7-AA3180F08FB3"
-        },
-        {
-          "defKey": "gmt_create",
-          "defName": "创建时间",
-          "comment": "",
-          "type": "DATETIME",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "CURRENT_TIMESTAMP",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "89D69E81-EA34-42EE-9FA2-93B8BD27E098",
-          "extProps": {},
           "domain": "",
-          "id": "0F96637A-BCF8-4801-B1C8-797A0AF7AAE4",
-          "uiHint": "",
-          "isStandard": true,
-          "refStandard": "201CF1AD-565C-473A-924C-DD70F2F78D69"
-        },
-        {
-          "defKey": "gmt_modified",
-          "defName": "修改时间",
-          "comment": "",
-          "type": "DATETIME",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "CURRENT_TIMESTAMP",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "89D69E81-EA34-42EE-9FA2-93B8BD27E098",
-          "extProps": {},
-          "domain": "",
-          "id": "62D394ED-0081-4E87-BD35-95DF74E35587",
-          "uiHint": "",
-          "isStandard": true,
-          "refStandard": "D885FC12-293E-4E58-B414-97262A3CDFAC"
-        },
-        {
-          "defKey": "create_user_id",
-          "defName": "创建人ID",
-          "comment": "",
-          "type": "BIGINT",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": false,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
-          "extProps": {},
-          "domain": "",
-          "id": "73CB360E-C0C8-453F-933B-03B5560CF843",
-          "uiHint": "",
-          "isStandard": true,
-          "refStandard": "C95CC516-C681-4857-9362-7DF32B92C5D4"
-        },
-        {
-          "defKey": "modify_user_id",
-          "defName": "修改人ID",
-          "comment": "",
-          "type": "BIGINT",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": false,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
-          "extProps": {},
-          "domain": "",
-          "id": "7D6A3EEA-80E0-4063-BD82-0AACA7699C3D",
-          "uiHint": "",
-          "isStandard": true,
-          "refStandard": "E899B7E9-6F8D-4C88-9ECB-11AFA29E0C28"
-        },
-        {
-          "defKey": "version",
-          "defName": "版本号",
-          "comment": "",
-          "type": "BIGINT",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
-          "extProps": {},
-          "domain": "",
-          "id": "48CC9D08-338D-453E-BCC9-070E76B44527"
-        },
-        {
-          "defKey": "deleted",
-          "defName": "是否删除",
-          "comment": "删除时写入id",
-          "type": "BIGINT",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "0",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
-          "extProps": {},
-          "domain": "",
-          "id": "23AC1BAF-6AF7-4E28-8BD2-A478BE81ECD2",
-          "uiHint": "",
-          "isStandard": true,
-          "refStandard": "60452292-DAEE-48F3-99B5-7FB2838EA3C7"
-        }
-      ],
-      "correlations": [],
-      "indexes": [
-        {
-          "defKey": "uniq_name",
-          "defName": null,
-          "unique": true,
-          "comment": "",
-          "fields": [
-            {
-              "fieldDefKey": "DD924524-1E90-44D8-91C7-AA3180F08FB3",
-              "ascOrDesc": "A",
-              "id": "831E6273-4E59-487B-9303-1C652CC0CE1C"
-            },
-            {
-              "fieldDefKey": "23AC1BAF-6AF7-4E28-8BD2-A478BE81ECD2",
-              "ascOrDesc": "A",
-              "id": "C5011D4C-01D3-4BDA-8F31-43DE6CAAFC32"
-            }
-          ],
-          "id": "42761EC1-92FD-4C55-A971-85FC5FB9FA78"
-        }
-      ],
-      "type": "P"
-    },
-    {
-      "id": "9D3E359D-F5F7-459F-A86C-70EF09895757",
-      "env": {
-        "base": {
-          "nameSpace": "",
-          "codeRoot": ""
-        }
-      },
-      "defKey": "approval_flow_selector",
-      "defName": "审批流选择器",
-      "comment": "",
-      "properties": {
-        "partitioned by": "(date string)",
-        "row format delimited": "",
-        "fields terminated by ','": "",
-        "collection items terminated by '-'": "",
-        "map keys terminated by ':'": "",
-        "store as textfile;": ""
-      },
-      "sysProps": {
-        "nameTemplate": "{defKey}[{defName}]"
-      },
-      "notes": {},
-      "headers": [
-        {
-          "refKey": "hideInGraph",
-          "hideInGraph": true
-        },
-        {
-          "refKey": "defKey",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "defName",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "primaryKey",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "notNull",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "autoIncrement",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "domain",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "type",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "len",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "scale",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "comment",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "refDict",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "defaultValue",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "isStandard",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "uiHint",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "extProps",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr1",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr2",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr3",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr4",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr5",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr6",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr7",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr8",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr9",
-          "freeze": false,
-          "hideInGraph": true
-        }
-      ],
-      "fields": [
-        {
-          "defKey": "id",
-          "defName": "ID",
-          "comment": "",
-          "type": "BIGINT",
-          "len": "",
-          "scale": "",
-          "primaryKey": true,
-          "notNull": true,
-          "autoIncrement": true,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
-          "extProps": {},
-          "domain": "",
-          "id": "BC0B6AD7-DE8F-4FD3-A2FE-D480A0F8AC12",
-          "uiHint": "",
-          "isStandard": true,
-          "refStandard": "3B17D0B0-D051-47D6-A51D-6B04CA595444"
+          "id": "AECE13F0-F0C6-4956-B65C-CA58775D8986"
         },
         {
           "defKey": "action",
           "defName": "审批动作类型",
-          "comment": "",
+          "comment": "写入后不变",
           "type": "VARCHAR",
           "len": 32,
           "scale": "",
@@ -1055,7 +1055,7 @@
         {
           "defKey": "selector",
           "defName": "审批流选择器",
-          "comment": "",
+          "comment": "写入后不变",
           "type": "VARCHAR",
           "len": 4096,
           "scale": "",
@@ -1071,45 +1071,9 @@
           "id": "A1E10752-FE60-4DE6-9EF0-F091AC25F221"
         },
         {
-          "defKey": "description",
-          "defName": "审批动作细节描述",
-          "comment": "",
-          "type": "VARCHAR",
-          "len": 255,
-          "scale": "",
-          "primaryKey": false,
-          "notNull": false,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "FC9790A7-36B8-4A48-8F9A-BC1042BCFE64",
-          "extProps": {},
-          "domain": "",
-          "id": "768D03B2-FB7E-4FAC-8C5F-A0D4290D5520"
-        },
-        {
-          "defKey": "approval_flow_id",
-          "defName": "审批流ID",
-          "comment": "",
-          "type": "BIGINT",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
-          "extProps": {},
-          "domain": "",
-          "id": "A27B299E-98C8-4B5D-A2E4-609475AEDF91"
-        },
-        {
           "defKey": "status",
-          "defName": "审批流选择器状态",
-          "comment": "ENABLED：已启用；DISABLED：已停用；INVALIDITY：已失效",
+          "defName": "审批流状态",
+          "comment": "ENABLED：已启用；DISABLED：已停用",
           "type": "VARCHAR",
           "len": 16,
           "scale": "",
@@ -1123,6 +1087,24 @@
           "extProps": {},
           "domain": "",
           "id": "267DA82D-D2AD-4B89-8329-C11DFC4EC990"
+        },
+        {
+          "defKey": "should_rollback",
+          "defName": "未完成申请单是否应该回滚",
+          "comment": "",
+          "type": "TINYINT",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "baseType": "178791C8-3AE8-4BB1-A137-A93F904AAE29",
+          "extProps": {},
+          "domain": "",
+          "id": "A04B1C53-DCCB-4D9F-9811-59A56309308D"
         },
         {
           "defKey": "gmt_create",
@@ -1207,6 +1189,24 @@
           "uiHint": "",
           "isStandard": true,
           "refStandard": "E899B7E9-6F8D-4C88-9ECB-11AFA29E0C28"
+        },
+        {
+          "defKey": "version",
+          "defName": "版本号",
+          "comment": "与审批流状态及名称无关",
+          "type": "BIGINT",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
+          "extProps": {},
+          "domain": "",
+          "id": "DDD1802B-C65A-4343-8123-B08BB7D26D51"
         },
         {
           "defKey": "deleted",
@@ -1444,9 +1444,27 @@
           "id": "22D0D5DE-060B-48AC-A5B3-18B4483CEE13"
         },
         {
+          "defKey": "user_version",
+          "defName": "审批人版本",
+          "comment": "NULL表示user_id删除后不会恢复；非NULL表示user_id删除后能够恢复，通过版本号来解决ABA问题",
+          "type": "BIGINT",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
+          "extProps": {},
+          "domain": "",
+          "id": "C28EA55F-62B5-48D4-9260-66C3E9B80D45"
+        },
+        {
           "defKey": "status",
           "defName": "审批状态",
-          "comment": "待审批，已通过，已拒绝，已失效（申请单已失效）",
+          "comment": "待审批，已通过，已拒绝，已失效（申请单已失效，审批人失效）",
           "type": "VARCHAR",
           "len": 16,
           "scale": "",
@@ -1496,6 +1514,24 @@
           "extProps": {},
           "domain": "",
           "id": "D8FD03AF-0565-4BFE-A1CC-23AEE38D07CD"
+        },
+        {
+          "defKey": "approval_flow_node_id",
+          "defName": "审批流节点ID",
+          "comment": "",
+          "type": "BIGINT",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
+          "extProps": {},
+          "domain": "",
+          "id": "E0B77171-1CF7-48BB-9685-945D3312D5E3"
         },
         {
           "defKey": "gmt_create",
@@ -1836,7 +1872,7 @@
         {
           "defKey": "status",
           "defName": "申请状态",
-          "comment": "审批中，已通过，已拒绝，已撤回，已打回，已失效(申请人从702离调职，应用删除，流程变更，申请有效期已过)",
+          "comment": "审批中，已通过，已拒绝，已撤回，已打回，已失效(申请人已失效，客体失效，流程变更，当前审批流节点已失效)",
           "type": "VARCHAR",
           "len": 16,
           "scale": "",
@@ -1870,32 +1906,14 @@
           "id": "38E26B16-1221-4810-B661-9CF2016E2BC7"
         },
         {
-          "defKey": "approval_flow_selector_id",
-          "defName": "审批流选择器ID",
-          "comment": "",
-          "type": "BIGINT",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
-          "extProps": {},
-          "domain": "",
-          "id": "6E517557-452F-4A5F-A80F-25227EC2D275"
-        },
-        {
           "defKey": "approval_flow_id",
           "defName": "审批流ID",
-          "comment": "",
+          "comment": "NULL表示默认审批流程",
           "type": "BIGINT",
           "len": "",
           "scale": "",
           "primaryKey": false,
-          "notNull": true,
+          "notNull": false,
           "autoIncrement": false,
           "defaultValue": "",
           "hideInGraph": false,
@@ -1913,7 +1931,7 @@
           "len": "",
           "scale": "",
           "primaryKey": false,
-          "notNull": true,
+          "notNull": false,
           "autoIncrement": false,
           "defaultValue": "",
           "hideInGraph": false,
@@ -1922,6 +1940,24 @@
           "extProps": {},
           "domain": "",
           "id": "8825CDF1-4AEA-4682-93BE-F29AB5203A8E"
+        },
+        {
+          "defKey": "should_rollback",
+          "defName": "未完成申请单是否应该回滚",
+          "comment": "",
+          "type": "TINYINT",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "baseType": "178791C8-3AE8-4BB1-A137-A93F904AAE29",
+          "extProps": {},
+          "domain": "",
+          "id": "9D4F0267-CC56-40C6-B3A2-FF9AFEB2A2E7"
         },
         {
           "defKey": "gmt_create",
@@ -2261,9 +2297,9 @@
         {
           "defKey": "approval_users",
           "defName": "审批人ID数组",
-          "comment": "",
-          "type": "",
-          "len": "",
+          "comment": "[{\"user_id\": 1, \"user_version\": 1}]    user_version为NULL或不存在user_version时，用户不存在表示审批人失效，通常在user_id删除后无法恢复的情况下使用；user_version为非NULL时，用户不存在或用户存在但版本号不一致表示审批人失效，通常在user_id删除后能够恢复的情况下使用，通过版本号来解决ABA问题。",
+          "type": "VARCHAR",
+          "len": 4096,
           "scale": "",
           "primaryKey": false,
           "notNull": false,
@@ -2273,8 +2309,26 @@
           "refDict": "",
           "baseType": "FC9790A7-36B8-4A48-8F9A-BC1042BCFE64",
           "extProps": {},
-          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "domain": "",
           "id": "F106E30D-D421-4E57-9338-6463C5446172"
+        },
+        {
+          "defKey": "invalid",
+          "defName": "审批流节点是否失效",
+          "comment": "会签且存在审批人失效，或签且所有审批人失效",
+          "type": "TINYINT",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "baseType": "178791C8-3AE8-4BB1-A137-A93F904AAE29",
+          "extProps": {},
+          "domain": "",
+          "id": "3EBD7B94-A886-4946-8279-3E28A57DB743"
         },
         {
           "defKey": "gmt_create",
@@ -2410,6 +2464,363 @@
         }
       ],
       "type": "P"
+    },
+    {
+      "id": "D6974784-2B3C-4019-A485-C03B70C9FF35",
+      "env": {
+        "base": {
+          "nameSpace": "",
+          "codeRoot": ""
+        }
+      },
+      "defKey": "approval_flow_template_node",
+      "defName": "审批流模板节点",
+      "comment": "",
+      "properties": {
+        "partitioned by": "(date string)",
+        "row format delimited": "",
+        "fields terminated by ','": "",
+        "collection items terminated by '-'": "",
+        "map keys terminated by ':'": "",
+        "store as textfile;": ""
+      },
+      "sysProps": {
+        "nameTemplate": "{defKey}[{defName}]"
+      },
+      "notes": {},
+      "headers": [
+        {
+          "refKey": "hideInGraph",
+          "hideInGraph": true
+        },
+        {
+          "refKey": "defKey",
+          "freeze": false,
+          "hideInGraph": false
+        },
+        {
+          "refKey": "defName",
+          "freeze": false,
+          "hideInGraph": false
+        },
+        {
+          "refKey": "primaryKey",
+          "freeze": false,
+          "hideInGraph": false
+        },
+        {
+          "refKey": "notNull",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "autoIncrement",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "domain",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "type",
+          "freeze": false,
+          "hideInGraph": false
+        },
+        {
+          "refKey": "len",
+          "freeze": false,
+          "hideInGraph": false
+        },
+        {
+          "refKey": "scale",
+          "freeze": false,
+          "hideInGraph": false
+        },
+        {
+          "refKey": "comment",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "refDict",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "defaultValue",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "isStandard",
+          "freeze": false,
+          "hideInGraph": false
+        },
+        {
+          "refKey": "uiHint",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "extProps",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "attr1",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "attr2",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "attr3",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "attr4",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "attr5",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "attr6",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "attr7",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "attr8",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "attr9",
+          "freeze": false,
+          "hideInGraph": true
+        }
+      ],
+      "fields": [
+        {
+          "defKey": "id",
+          "defName": "ID",
+          "comment": "",
+          "type": "BIGINT",
+          "len": "",
+          "scale": "",
+          "primaryKey": true,
+          "notNull": true,
+          "autoIncrement": true,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": null,
+          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
+          "extProps": {},
+          "domain": null,
+          "id": "401009A5-EA50-4354-B0A7-C598D447DD68",
+          "uiHint": null,
+          "isStandard": true,
+          "refStandard": "3B17D0B0-D051-47D6-A51D-6B04CA595444"
+        },
+        {
+          "defKey": "approval_flow_template_id",
+          "defName": "审批流模板ID",
+          "comment": "",
+          "type": "BIGINT",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": null,
+          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
+          "extProps": {},
+          "domain": null,
+          "id": "F2CCF3CF-691C-4066-9106-E31552DA83D3",
+          "uiHint": null
+        },
+        {
+          "defKey": "number",
+          "defName": "序号",
+          "comment": "",
+          "type": "INT",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": null,
+          "baseType": "1D764C4A-6F9F-421E-B11A-6F3E23B51811",
+          "extProps": {},
+          "domain": null,
+          "id": "6F47508C-9208-4D7D-9CA0-E0D9133B9284",
+          "uiHint": null
+        },
+        {
+          "defKey": "node_type",
+          "defName": "节点类型",
+          "comment": "或签，会签",
+          "type": "VARCHAR",
+          "len": 16,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": null,
+          "baseType": "FC9790A7-36B8-4A48-8F9A-BC1042BCFE64",
+          "extProps": {},
+          "domain": null,
+          "id": "C1C794A7-E257-4CB0-AFB6-D3D6CD135197",
+          "uiHint": null
+        },
+        {
+          "defKey": "approval_users",
+          "defName": "审批人ID数组",
+          "comment": "[{\"user_id\": 1, \"user_version\": 1}]    user_version为NULL或不存在user_version时，用户不存在表示该元素失效，通常在user_id删除后无法恢复的情况下使用；user_version为非NULL时，用户不存在或用户存在但版本号不一致表示该元素失效，通常在user_id删除后能够恢复的情况下使用，通过版本号来解决ABA问题。  元素失效则从审批人列表中剔除。",
+          "type": "VARCHAR",
+          "len": 4096,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "'[]'",
+          "hideInGraph": false,
+          "refDict": null,
+          "baseType": "FC9790A7-36B8-4A48-8F9A-BC1042BCFE64",
+          "extProps": {},
+          "domain": null,
+          "id": "F8C15319-C4EB-430E-A54F-F6011C781992",
+          "uiHint": null
+        },
+        {
+          "defKey": "gmt_create",
+          "defName": "创建时间",
+          "comment": "",
+          "type": "DATETIME",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "CURRENT_TIMESTAMP",
+          "hideInGraph": false,
+          "refDict": null,
+          "baseType": "89D69E81-EA34-42EE-9FA2-93B8BD27E098",
+          "extProps": {},
+          "domain": null,
+          "id": "05DFCE28-D4C7-4A7A-A169-7BF49302EDEF",
+          "uiHint": null,
+          "isStandard": true,
+          "refStandard": "201CF1AD-565C-473A-924C-DD70F2F78D69"
+        },
+        {
+          "defKey": "gmt_modified",
+          "defName": "修改时间",
+          "comment": "",
+          "type": "DATETIME",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "CURRENT_TIMESTAMP",
+          "hideInGraph": false,
+          "refDict": null,
+          "baseType": "89D69E81-EA34-42EE-9FA2-93B8BD27E098",
+          "extProps": {},
+          "domain": null,
+          "id": "B4AED31D-2951-46C8-B103-14F7E18DAF79",
+          "uiHint": null,
+          "isStandard": true,
+          "refStandard": "D885FC12-293E-4E58-B414-97262A3CDFAC"
+        },
+        {
+          "defKey": "create_user_id",
+          "defName": "创建人ID",
+          "comment": "",
+          "type": "BIGINT",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": null,
+          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
+          "extProps": {},
+          "domain": null,
+          "id": "5B4DF8BA-98A4-4E7A-8A2C-A6ADD5F59227",
+          "uiHint": null,
+          "isStandard": true,
+          "refStandard": "C95CC516-C681-4857-9362-7DF32B92C5D4"
+        },
+        {
+          "defKey": "modify_user_id",
+          "defName": "修改人ID",
+          "comment": "",
+          "type": "BIGINT",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": null,
+          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
+          "extProps": {},
+          "domain": null,
+          "id": "88F3C1AA-6E4E-4DA8-AE9D-A81272E49FC6",
+          "uiHint": null,
+          "isStandard": true,
+          "refStandard": "E899B7E9-6F8D-4C88-9ECB-11AFA29E0C28"
+        },
+        {
+          "defKey": "deleted",
+          "defName": "是否删除",
+          "comment": "删除时写入id",
+          "type": "BIGINT",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": false,
+          "refDict": null,
+          "baseType": "AFC4E28F-BB69-46F2-B4B8-9ADD92380863",
+          "extProps": {},
+          "domain": null,
+          "id": "96B8BF17-3060-4950-9274-1401ABC2EE9F",
+          "uiHint": null,
+          "isStandard": true,
+          "refStandard": "60452292-DAEE-48F3-99B5-7FB2838EA3C7"
+        }
+      ],
+      "correlations": [],
+      "indexes": [],
+      "type": "P"
     }
   ],
   "views": [],
@@ -2453,8 +2864,9 @@
       "defKey": "approval",
       "defName": "审批",
       "refEntities": [
+        "F41A1BD5-D5CF-46DD-A183-FED76C0460B2",
+        "D6974784-2B3C-4019-A485-C03B70C9FF35",
         "B7423751-6977-4396-B3A1-7DA18B411922",
-        "7CEBA58C-CA96-43C6-AF2E-5C8C37D4F089",
         "9D3E359D-F5F7-459F-A86C-70EF09895757",
         "DB2B6B74-3E5F-4713-AEC5-09DBADBF8465",
         "73043F45-6F06-4D68-902A-8F35364D16B3"

@@ -1,5 +1,6 @@
 package ppl.common.approval.dao.entities;
 
+import ppl.common.approval.base.UserId;
 import ppl.common.approval.enums.RequisitionFormStatus;
 
 import java.util.Date;
@@ -7,15 +8,14 @@ import java.util.Map;
 
 public class RequisitionForm {
     private Long id;
-    private Long userId;
+    private UserId userId;
     private String action;
     private Map<String, Object> attributes;
     private String description;
     private RequisitionFormStatus status;
-    private String causeOfInvalidity;
-    private Long approvalFlowSelectorId;
     private Long approvalFlowId;
     private Long approvalFlowVersion;
+    private Boolean shouldInvalid;
     private Date gmtCreate;
     private Date gmtModified;
     private Long createUserId;
@@ -30,11 +30,11 @@ public class RequisitionForm {
         this.id = id;
     }
 
-    public Long getUserId() {
+    public UserId getUserId() {
         return userId;
     }
 
-    public void setUserId(Long userId) {
+    public void setUserId(UserId userId) {
         this.userId = userId;
     }
 
@@ -70,22 +70,6 @@ public class RequisitionForm {
         this.status = status;
     }
 
-    public String getCauseOfInvalidity() {
-        return causeOfInvalidity;
-    }
-
-    public void setCauseOfInvalidity(String causeOfInvalidity) {
-        this.causeOfInvalidity = causeOfInvalidity;
-    }
-
-    public Long getApprovalFlowSelectorId() {
-        return approvalFlowSelectorId;
-    }
-
-    public void setApprovalFlowSelectorId(Long approvalFlowSelectorId) {
-        this.approvalFlowSelectorId = approvalFlowSelectorId;
-    }
-
     public Long getApprovalFlowId() {
         return approvalFlowId;
     }
@@ -100,6 +84,14 @@ public class RequisitionForm {
 
     public void setApprovalFlowVersion(Long approvalFlowVersion) {
         this.approvalFlowVersion = approvalFlowVersion;
+    }
+
+    public Boolean getShouldInvalid() {
+        return shouldInvalid;
+    }
+
+    public void setShouldInvalid(Boolean shouldInvalid) {
+        this.shouldInvalid = shouldInvalid;
     }
 
     public Date getGmtCreate() {

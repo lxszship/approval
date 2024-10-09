@@ -1,6 +1,7 @@
 package ppl.common.approval.dao.entities;
 
-import ppl.common.approval.enums.NodeType;
+import ppl.common.approval.base.UserId;
+import ppl.common.approval.enums.SignType;
 
 import java.util.Date;
 import java.util.List;
@@ -8,9 +9,9 @@ import java.util.List;
 public class ApprovalFlowNode {
     private Long id;
     private Long approvalFlowId;
-    private Integer number;
-    private NodeType type;
-    private List<Long> approvalUsers;
+    private Integer phase;
+    private SignType type;
+    private List<UserId> approvalUsers;
     private Date gmtCreate;
     private Date gmtModified;
     private Long createUserId;
@@ -33,27 +34,27 @@ public class ApprovalFlowNode {
         this.approvalFlowId = approvalFlowId;
     }
 
-    public Integer getNumber() {
-        return number;
+    public Integer getPhase() {
+        return phase;
     }
 
-    public void setNumber(Integer number) {
-        this.number = number;
+    public void setPhase(Integer phase) {
+        this.phase = phase;
     }
 
-    public NodeType getType() {
+    public SignType getType() {
         return type;
     }
 
-    public void setType(NodeType type) {
+    public void setType(SignType type) {
         this.type = type;
     }
 
-    public List<Long> getApprovalUsers() {
+    public List<UserId> getApprovalUsers() {
         return approvalUsers;
     }
 
-    public void setApprovalUsers(List<Long> approvalUsers) {
+    public void setApprovalUsers(List<UserId> approvalUsers) {
         this.approvalUsers = approvalUsers;
     }
 

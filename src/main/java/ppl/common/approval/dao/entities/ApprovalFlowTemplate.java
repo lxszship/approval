@@ -1,22 +1,17 @@
 package ppl.common.approval.dao.entities;
 
-import ppl.common.approval.enums.ApprovalFlowStatus;
+import ppl.common.approval.enums.ApprovalFlowTemplateStatus;
 
 import java.util.Date;
-import java.util.Map;
 
-public class ApprovalFlow {
+public class ApprovalFlowTemplate {
     private Long id;
     private String name;
-    private String action;
-    private Map<String, Object> selector;
-    private ApprovalFlowStatus status;
-    private Boolean shouldInvalid;
+    private ApprovalFlowTemplateStatus status;
     private Date gmtCreate;
     private Date gmtModified;
     private Long createUserId;
     private Long modifyUserId;
-    private Long version;
     private Long deleted;
 
     public Long getId() {
@@ -35,36 +30,12 @@ public class ApprovalFlow {
         this.name = name;
     }
 
-    public String getAction() {
-        return action;
-    }
-
-    public void setAction(String action) {
-        this.action = action;
-    }
-
-    public Map<String, Object> getSelector() {
-        return selector;
-    }
-
-    public void setSelector(Map<String, Object> selector) {
-        this.selector = selector;
-    }
-
-    public ApprovalFlowStatus getStatus() {
+    public ApprovalFlowTemplateStatus getStatus() {
         return status;
     }
 
-    public void setStatus(ApprovalFlowStatus status) {
+    public void setStatus(ApprovalFlowTemplateStatus status) {
         this.status = status;
-    }
-
-    public Boolean getShouldInvalid() {
-        return shouldInvalid;
-    }
-
-    public void setShouldInvalid(Boolean shouldInvalid) {
-        this.shouldInvalid = shouldInvalid;
     }
 
     public Date getGmtCreate() {
@@ -97,14 +68,6 @@ public class ApprovalFlow {
 
     public void setModifyUserId(Long modifyUserId) {
         this.modifyUserId = modifyUserId;
-    }
-
-    public Long getVersion() {
-        return version;
-    }
-
-    public void setVersion(Long version) {
-        this.version = version;
     }
 
     public Long getDeleted() {

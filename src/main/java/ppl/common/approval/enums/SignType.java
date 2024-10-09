@@ -1,8 +1,8 @@
 package ppl.common.approval.enums;
 
 /**
- * 审批流节点类型
+ * 审批类型
  */
-public enum NodeType {
+public enum SignType {
     /** 或签 */ LEAST_ONE_SIGN, /** 会签 */ ALL_SIGN
 }

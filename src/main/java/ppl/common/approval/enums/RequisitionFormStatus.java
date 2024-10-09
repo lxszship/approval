@@ -6,5 +6,5 @@ public enum RequisitionFormStatus {
     /** 已拒绝 */ REJECTED,
     /** 已撤回 */ REVOKED,
     /** 已打回 */ RETURNED,
-    /** 已失效(申请人从702离调职，应用删除，流程变更，申请有效期已过) */ INVALIDITY
+    /** 已失效(流程变更且流程变更后未完成的申请单应该失效) */ INVALIDITY
 }

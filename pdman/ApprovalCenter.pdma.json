@@ -4,7 +4,7 @@
   "avatar": "",
   "version": "4.9.4",
   "createdTime": "2024-9-29 22:10:48",
-  "updatedTime": "2024-10-9 00:58:26",
+  "updatedTime": "2024-10-9 11:58:45",
   "dbConns": [],
   "profile": {
     "default": {
@@ -1089,8 +1089,8 @@
           "id": "267DA82D-D2AD-4B89-8329-C11DFC4EC990"
         },
         {
-          "defKey": "should_rollback",
-          "defName": "未完成申请单是否应该回滚",
+          "defKey": "should_invalid",
+          "defName": "未完成申请单是否应该失效",
           "comment": "",
           "type": "TINYINT",
           "len": "",
@@ -1464,7 +1464,7 @@
         {
           "defKey": "status",
           "defName": "审批状态",
-          "comment": "待审批，已通过，已拒绝，已失效（申请单已失效，审批人失效）",
+          "comment": "待审批，已通过，已拒绝，已失效（申请单已失效）",
           "type": "VARCHAR",
           "len": 16,
           "scale": "",
@@ -1498,7 +1498,25 @@
           "id": "E98E59BE-D491-4339-96B4-259D2C39D3FD"
         },
         {
-          "defKey": "node_type",
+          "defKey": "phase",
+          "defName": "审批阶段号",
+          "comment": "",
+          "type": "INT",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "baseType": "1D764C4A-6F9F-421E-B11A-6F3E23B51811",
+          "extProps": {},
+          "domain": "",
+          "id": "AF88EE4A-8246-4678-8FEC-1230307F3BC7"
+        },
+        {
+          "defKey": "sign_type",
           "defName": "审批类型",
           "comment": "LEAST_ONE_SIGN：或签，ALL_SIGN：会签",
           "type": "VARCHAR",
@@ -1890,7 +1908,7 @@
         {
           "defKey": "status",
           "defName": "申请状态",
-          "comment": "审批中，已通过，已拒绝，已撤回，已打回，已失效(申请人已失效，客体失效，流程变更，当前审批流节点已失效)",
+          "comment": "审批中，已通过，已拒绝，已撤回，已打回，已失效(流程变更且流程变更后未完成的申请单应该失效)",
           "type": "VARCHAR",
           "len": 16,
           "scale": "",
@@ -1904,24 +1922,6 @@
           "extProps": {},
           "domain": "",
           "id": "29953E76-0E8C-485B-A3DA-51A993A56BF6"
-        },
-        {
-          "defKey": "cause_of_invalidity",
-          "defName": "失效原因",
-          "comment": "",
-          "type": "",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": false,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "FC9790A7-36B8-4A48-8F9A-BC1042BCFE64",
-          "extProps": {},
-          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
-          "id": "38E26B16-1221-4810-B661-9CF2016E2BC7"
         },
         {
           "defKey": "approval_flow_id",
@@ -1960,8 +1960,8 @@
           "id": "8825CDF1-4AEA-4682-93BE-F29AB5203A8E"
         },
         {
-          "defKey": "should_rollback",
-          "defName": "未完成申请单是否应该回滚",
+          "defKey": "should_invalid",
+          "defName": "未完成申请单是否应该失效",
           "comment": "",
           "type": "TINYINT",
           "len": "",
@@ -2277,8 +2277,8 @@
           "id": "23452963-1D9A-4921-85DD-CD5780B57694"
         },
         {
-          "defKey": "number",
-          "defName": "序号",
+          "defKey": "phase",
+          "defName": "审批阶段号",
           "comment": "",
           "type": "INT",
           "len": "",
@@ -2295,8 +2295,8 @@
           "id": "27E16BEB-09CA-4F56-ADA3-D2E7070F57C8"
         },
         {
-          "defKey": "node_type",
-          "defName": "节点类型",
+          "defKey": "sign_type",
+          "defName": "审批类型",
           "comment": "LEAST_ONE_SIGN：或签，ALL_SIGN：会签",
           "type": "VARCHAR",
           "len": 16,
@@ -2329,24 +2329,6 @@
           "extProps": {},
           "domain": "",
           "id": "F106E30D-D421-4E57-9338-6463C5446172"
-        },
-        {
-          "defKey": "invalid",
-          "defName": "审批流节点是否失效",
-          "comment": "会签且存在审批人失效，或签且所有审批人失效",
-          "type": "TINYINT",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": false,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "baseType": "178791C8-3AE8-4BB1-A137-A93F904AAE29",
-          "extProps": {},
-          "domain": "",
-          "id": "3EBD7B94-A886-4946-8279-3E28A57DB743"
         },
         {
           "defKey": "gmt_create",
@@ -2674,8 +2656,8 @@
           "uiHint": null
         },
         {
-          "defKey": "number",
-          "defName": "序号",
+          "defKey": "phase",
+          "defName": "审批阶段号",
           "comment": "",
           "type": "INT",
           "len": "",
@@ -2693,9 +2675,9 @@
           "uiHint": null
         },
         {
-          "defKey": "node_type",
-          "defName": "节点类型",
-          "comment": "或签，会签",
+          "defKey": "sign_type",
+          "defName": "审批类型",
+          "comment": "LEAST_ONE_SIGN：或签，ALL_SIGN：会签",
           "type": "VARCHAR",
           "len": 16,
           "scale": "",
@@ -2884,8 +2866,8 @@
       "refEntities": [
         "F41A1BD5-D5CF-46DD-A183-FED76C0460B2",
         "D6974784-2B3C-4019-A485-C03B70C9FF35",
-        "B7423751-6977-4396-B3A1-7DA18B411922",
         "9D3E359D-F5F7-459F-A86C-70EF09895757",
+        "B7423751-6977-4396-B3A1-7DA18B411922",
         "DB2B6B74-3E5F-4713-AEC5-09DBADBF8465",
         "73043F45-6F06-4D68-902A-8F35364D16B3"
       ],

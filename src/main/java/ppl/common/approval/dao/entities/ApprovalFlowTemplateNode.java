@@ -1,17 +1,17 @@
 package ppl.common.approval.dao.entities;
 
-import ppl.common.approval.enums.ApprovalFlowSelectorStatus;
+import ppl.common.approval.base.UserId;
+import ppl.common.approval.enums.SignType;
 
 import java.util.Date;
-import java.util.Map;
+import java.util.List;
 
-public class ApprovalFlowSelector {
+public class ApprovalFlowTemplateNode {
     private Long id;
-    private String action;
-    private Map<String, Object> selector;
-    private String description;
-    private Long approvalFlowId;
-    private ApprovalFlowSelectorStatus status;
+    private Long approvalFlowTemplateId;
+    private Integer phase;
+    private SignType type;
+    private List<UserId> approvalUsers;
     private Date gmtCreate;
     private Date gmtModified;
     private Long createUserId;
@@ -26,44 +26,36 @@ public class ApprovalFlowSelector {
         this.id = id;
     }
 
-    public String getAction() {
-        return action;
+    public Long getApprovalFlowTemplateId() {
+        return approvalFlowTemplateId;
     }
 
-    public void setAction(String action) {
-        this.action = action;
+    public void setApprovalFlowTemplateId(Long approvalFlowTemplateId) {
+        this.approvalFlowTemplateId = approvalFlowTemplateId;
     }
 
-    public Map<String, Object> getSelector() {
-        return selector;
+    public Integer getPhase() {
+        return phase;
     }
 
-    public void setSelector(Map<String, Object> selector) {
-        this.selector = selector;
+    public void setPhase(Integer phase) {
+        this.phase = phase;
     }
 
-    public String getDescription() {
-        return description;
+    public SignType getType() {
+        return type;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setType(SignType type) {
+        this.type = type;
     }
 
-    public Long getApprovalFlowId() {
-        return approvalFlowId;
+    public List<UserId> getApprovalUsers() {
+        return approvalUsers;
     }
 
-    public void setApprovalFlowId(Long approvalFlowId) {
-        this.approvalFlowId = approvalFlowId;
-    }
-
-    public ApprovalFlowSelectorStatus getStatus() {
-        return status;
-    }
-
-    public void setStatus(ApprovalFlowSelectorStatus status) {
-        this.status = status;
+    public void setApprovalUsers(List<UserId> approvalUsers) {
+        this.approvalUsers = approvalUsers;
     }
 
     public Date getGmtCreate() {

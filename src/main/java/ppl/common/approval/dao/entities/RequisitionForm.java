@@ -1,5 +1,6 @@
 package ppl.common.approval.dao.entities;
 
+import com.fasterxml.jackson.databind.JsonNode;
 import ppl.common.approval.base.UserId;
 import ppl.common.approval.enums.RequisitionFormStatus;
 
@@ -10,7 +11,7 @@ public class RequisitionForm {
     private Long id;
     private UserId userId;
     private String action;
-    private Map<String, Object> attributes;
+    private JsonNode attributes;
     private String description;
     private RequisitionFormStatus status;
     private Long approvalFlowId;
@@ -46,11 +47,11 @@ public class RequisitionForm {
         this.action = action;
     }
 
-    public Map<String, Object> getAttributes() {
+    public JsonNode getAttributes() {
         return attributes;
     }
 
-    public void setAttributes(Map<String, Object> attributes) {
+    public void setAttributes(JsonNode attributes) {
         this.attributes = attributes;
     }
 

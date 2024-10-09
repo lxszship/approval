@@ -1,5 +1,6 @@
 package ppl.common.approval.dao.entities;
 
+import com.fasterxml.jackson.databind.JsonNode;
 import ppl.common.approval.enums.ApprovalFlowStatus;
 
 import java.util.Date;
@@ -9,7 +10,7 @@ public class ApprovalFlow {
     private Long id;
     private String name;
     private String action;
-    private Map<String, Object> selector;
+    private JsonNode selector;
     private ApprovalFlowStatus status;
     private Boolean shouldInvalid;
     private Date gmtCreate;
@@ -43,11 +44,11 @@ public class ApprovalFlow {
         this.action = action;
     }
 
-    public Map<String, Object> getSelector() {
+    public JsonNode getSelector() {
         return selector;
     }
 
-    public void setSelector(Map<String, Object> selector) {
+    public void setSelector(JsonNode selector) {
         this.selector = selector;
     }
 
